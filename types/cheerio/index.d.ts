@@ -189,7 +189,7 @@ interface Cheerio {
     replaceWith(content: () => Cheerio): Cheerio;
 
     empty(): Cheerio;
-
+   
     html(): string | null;
     html(html: string): Cheerio;
 
@@ -256,7 +256,7 @@ interface CheerioStatic extends CheerioSelector {
     root(): Cheerio;
     contains(container: CheerioElement, contained: CheerioElement): boolean;
     parseHTML(data: string, context?: Document, keepScripts?: boolean): Document[];
-
+    text(): string;
     html(options?: CheerioOptionsInterface): string;
     html(selector: string, options?: CheerioOptionsInterface): string;
     html(element: Cheerio, options?: CheerioOptionsInterface): string;
